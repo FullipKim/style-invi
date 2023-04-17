@@ -1,0 +1,77 @@
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="../img/tabicon.png">
+		<link rel="stylesheet" href="../style-invi.css">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>360Xcon</title>
+	</head>
+	<body>
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-12 bg-cont">
+						<div class="wrapper">
+							<div class="row no-gutters">
+								<div class="col-lg-6 d-flex align-items-stretch">
+									<!-- 전시 포스터 데이터 (overflow시 잘라버리기~~) -->
+									<div class="info-wrap w-100 img col-10 col-xs-offset-1" style="background-image: url('https://xconimages.blob.core.windows.net/xcon-homepage/dtype-gogh-poster.png');">
+										<div>
+											<img src="" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="col-lg-8 contact-wrap w-100 p-md-5 p-4 information">
+										<!-- 전시명 데이터 -->
+										<h3>THE STARRY NIGHT</h3>
+										<!-- 작가명 데이터 -->
+										<h4>Vincent van Gogh</h4>
+										<div id="form-message-warning" class="mb-4">
+										올바른 전시코드를 입력하세요.
+										</div> 
+										<div id="form-message-success" class="mb-4">
+										입장 도와드리겠습니다.
+										</div>
+										<!-- 전시 설명 데이터 -->
+										<p>빈센트 반 고흐는 네덜란드의 인상주의 화가로서, 서양미술사상 가장 위대한 화가 중 한 사람으로 여겨진다. 그는 자신의 작품 전부를 정신질환을 앓고 자살을 감행하기 전의 단 10년만에 만들어냈다.<br>여기에 〈별이 빛나는 밤〉을 비롯한 그의 대표작들과 각 작품에 얽힌 이야기를 담아 풀어냈다.</p>
+										<br>
+										<!-- 포스트방식 -->
+										<form method="POST" action="/enter" id="contactForm" name="contactForm" class="contactForm">
+											<div class="row">
+												<div class="col-md-12"> 
+													<div class="form-group">
+														<input type="text" class="form-control" name="invitationCode" id="invitationCode" placeholder="　INPUT CODE : 초대코드를 입력하세요">
+													</div>
+												</div>
+
+												<div class="col-md-12">
+													<div class="form-group">
+													<label id="emailCollectCheck-error" class="error" for="emailCollectCheck"></label>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<input style="width: 100%; margin-top: 3%;" type="submit" value="ENTERING" class="btn btn-primary">
+														<div class="submitting"></div>
+													</div>
+												</div>
+											</div>
+											<input type="hidden" value="unityTest" name="exhibitionCode">
+										</form>
+									</div>
+									<div class="col-lg-4 p-md-2 p-2 h-100">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
